@@ -1,0 +1,133 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+% Adjust margins (tight but balanced)
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-0.95in}
+\addtolength{\textheight}{1.7in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    #1 \vspace{-2pt}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}, itemsep=2pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\Huge \scshape Harsh Vardhan} \\ \vspace{1pt}
+  Saharsa, Bihar \\ \vspace{1pt}
+  \small \raisebox{-0.1\height}\faPhone\ +91  ~ 
+  \faEnvelope\ {@gmail.com} ~
+  \href{https://www.linkedin.com/in/harsh-vardhan-52386621b/}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}}
+  \href{https://codeforces.com/profile/sparrow_harsh}{\hspace{6pt}\underline{Codeforces}}
+  \href{https://leetcode.com/u/sparrow_harsh/}{\hspace{6pt}\underline{Leetcode}}
+  \href{https://www.codechef.com/users/sparrow_harsh}{\hspace{6pt}\underline{Codechef}}
+  \vspace{-8pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Hewlett Packard Enterprise (HPE)}{September 2024 - Present}{Cloud Developer - I}{Bengaluru, India}
+  \resumeItemListStart
+    \resumeItem{Contributed to the design and development of \textbf{CDC} for efficient \textbf{NVMe-oTCP} target discovery, working on \textbf{MDNS protocol} integration, \textbf{Docker}-based workflows, and \textbf{packet-level networking performance tuning}.}
+    \resumeItem{Developed \textbf{command timeout/kill mechanism} using \textbf{multithreading}, automating termination of unresponsive processes across \textbf{50+ API endpoints} (reducing hung tasks by \textbf{90\%}).}
+    \resumeItem{Redefined data flow for a critical feature by replacing redundant \textbf{database writes} with an \textbf{in-memory buffer} strategy, achieving \textbf{60--70\% faster} response times and reducing \textbf{DB load}.}
+    \resumeItem{Built and maintained backend services for an internal content management portal using \textbf{Java Spring Boot}, enabling secure storage and retrieval of team assets like \textbf{photos}, \textbf{notes}, and \textbf{recordings}.}
+    \resumeItem{Optimized \textbf{NVMe target log page handling} by restructuring the \texttt{nqn\_ip} data structure, achieving an \textbf{87.5\% reduction} in network usage and enabling faster \textbf{host-side processing}.}
+\resumeSubHeadingListEnd
+
+
+  \resumeSubheading{Hewlett Packard Enterprise (HPE)}{February 2024 - August 2024}{College Intern}{Bengaluru, India}
+  \resumeItemListStart
+    \resumeItem{Worked in the \textbf{Network Storage} team, contributing to \textbf{Central Discovery Controller (CDC)} automation for NVMe-oTCP target discovery.}
+    \resumeItem{Implemented the \textbf{zone member feature} from scratch, ensuring proper communication between host and target as per NVMe protocol flow.}
+    \resumeItem{Studied design documents and gained hands-on exposure to the \textbf{NVMe-over-TCP protocol}, CDC architecture, and storage discovery workflows.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeItemListStart
+  \resumeItem{\textbf{Knight} at Leetcode. Ranked in the \textbf{Top 3.81\%}, highest rating \textbf{1937}.}
+  \resumeItem{\textbf{Specialist} at Codeforces with a highest rating of \textbf{1432}.}
+  \resumeItem{\textbf{4*} at Codechef with a highest rating of \textbf{1888}.}
+  \resumeItem{Secured \textbf{Global Rank 3811} in Google Kickstart Round C 2022.}
+  \resumeItem{Secured \textbf{Global Rank 860} in CodeForces Round 835 (Div. 4).}
+  \resumeItem{Secured \textbf{Global rank 947} in Leetcode Weekly Contest 334 and \textbf{Global rank 991} in Leetcode Biweekly Contest 101.}
+\resumeItemListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubheading{Low-Level C++ HTTP Server} {TCP Sockets, HTTP, Multi-Threading,Real-Time JSON Streaming}{}{}
+  \resumeItemListStart
+    \resumeItem{Developed a Low-Level C++ HTTP Server with Real-Time JSON Streaming, leveraging raw TCP sockets (socket, bind, listen, accept) for high-performance data transmission}
+    \resumeItem{Implemented HTTP request parsing, response handling, and Chunked Transfer Encoding for real-time data streaming over TCP.}
+    \resumeItem{Designed a scalable, lightweight HTTP microservice with proper error handling, request validation, and modular code structure for future enhancements like multi-threading and HTTPS support}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+  {Food Delivery App}{Spring Boot, Java, MySQL, JPA, REST, Maven}
+  {}{}
+  \resumeItemListStart
+    \resumeItem{Designed and implemented RESTful APIs using Spring Boot to handle core operations like user registration, login, cart management, and order placement.}
+    \resumeItem{Created normalized SQL database schema for Users, Restaurants, Menus, Orders, and Carts using MySQL.}
+    \resumeItem{Used Spring Data JPA and Hibernate to map entities and simplify database operations.}
+    \resumeItem{Developed backend features such as add-to-cart, place order, order status tracking, and user reviews.}
+  \resumeItemListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+  \resumeItem{\textbf{Programming Languages:} C++, C, Java, GoLang}
+  \resumeItem{\textbf{Tech Stack/Tools:} Linux, Spring, Microservices, CI-CD, Spring Boot, Git, Docker, }
+  \resumeItem{\textbf{Core Engineering Topics:} Low-Level Design (LLD), High-Level Design (HLD), Networking, System Design, Databases}
+\resumeItemListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{Vellore Institute of Technology, Vellore}{Tamil Nadu, India}{B.Tech in Computer Science and Engineering (CGPA: 9.27)}{August 2020 - July 2024}
+  \resumeSubheading{ManoharLal Tekriwal College, Saharsa}{Bihar, India}{Class XII - Bihar Board (88.8\%)}{April 2017 - April 2019}
+\resumeSubHeadingListEnd
+
+\end{document}
